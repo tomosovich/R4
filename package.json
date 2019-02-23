@@ -1,11 +1,18 @@
 {
   "name": "r4",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Testing Bot Deployment on Heroku",
+  "main": "bot.js",
+  "engines": {
+    "node": "11.0.0",
+    "npm": "*"
   },
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "Daniel Tomosovich",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
 }
