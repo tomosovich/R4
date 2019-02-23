@@ -6,10 +6,10 @@ const Config = require('./config');
 const client = new Discord.Client();
 
 // Look for Heroku's dynamic PORT assignment
-const PORT = process.env.PORT || 3000;
-client.listen(PORT, () => {
-  console.log(`Our app is running on port ${PORT}`);
-});
+// const PORT = process.env.PORT || 3000;
+// client.listen(PORT, () => {
+//   console.log(`Our app is running on port ${PORT}`);
+// });
 
 client.on('message', (receivedMessage) => {
   if (receivedMessage.author == client.user) { // Prevent bot from responding to its own messages
